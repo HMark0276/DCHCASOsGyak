@@ -1,0 +1,14 @@
+10. Írjon egy olyan C programot, mely
+    egy fájlból számpárokat kiolvasva meghatározza a legnagyobb közös osztóját.
+    A feladat megoldása során használjon message queue(üzenetsoros) IPC mechanizmust,
+    valamint a kimenet kerüljön egy másik fájlba.
+    A kimeneti fájl struktúrája kötött!
+
+    Példa a bemeneti és kimeneti fájl struktúrájára:
+
+    Bemeneti fájl:
+    i (Ez jelzi a számpárok darabszámát)
+    x y
+
+    Kimeneti fájl(Az x,y jelzi a bemeneti adatokat a z pedig a kimenet eredményét):
+    x y z
