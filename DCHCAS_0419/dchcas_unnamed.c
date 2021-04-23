@@ -21,7 +21,7 @@ int main(int argc, char *argv[])
 		exit(EXIT_FAILURE);
 	}
 
-	printf("PID: %d: fd[0]: %d, fd[1]: %d\n", getpid(), pipefd[0], pipefd[1]);
+	printf("PID: %d, fd[0]: %d, fd[1]: %d\n", getpid(), pipefd[0], pipefd[1]);
 	cpid=fork();
 
 	if(cpid==-1){
