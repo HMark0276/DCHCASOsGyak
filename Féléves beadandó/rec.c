@@ -22,6 +22,10 @@ int main()
 
     msgid = msgget(key, 0666 | IPC_CREAT);
     printf("msgid: %d\n", msgid);
+    if(msgid == -1){
+        perror("msget");
+        exit(1);
+    
     for(;;){
 
         if(msgrcv(msgid, &message, sizeof(message), 1, 0) == -1){
